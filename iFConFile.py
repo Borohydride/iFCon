@@ -111,5 +111,6 @@ class iFConFile:
             self.saved = True
 
     def close(self):
+        self.save()
         self.f.close()
         del self
