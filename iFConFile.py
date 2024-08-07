@@ -93,6 +93,15 @@ class iFConFile:
         with open(file, 'rb') as f:
             data = f.read()
         self._addfile(target, data)
+    
+    def addfolder(self, folder, target = ''):
+        for root, dirs, files in os.walk(folder):
+            for file in files:
+                filepath = os.path.join(root, file)
+                relpath = os.path.relpath(filepath, folder)
+                with open(filepath, 'rb') as f:
+                    data = f.read()
+                self._addfile(os.path.join(target, relpath), data)
 
     def save(self):
         if not self.mode == 'wb':
