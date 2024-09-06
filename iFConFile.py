@@ -120,6 +120,7 @@ class iFConFile:
             self.saved = True
 
     def close(self):
-        self.save()
+        if self.mode == 'wb':
+            self.save()
         self.f.close()
         del self

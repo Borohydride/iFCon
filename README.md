@@ -1,12 +1,28 @@
 # iFCon
-A tool used to handle iFAction resource file (iFCon file)
+A tool for handling iFAction resource file (iFCon file)
 
-## Usage
+##Usage
+
+positional arguments:
+  file                  The iFCon file to extract or pack.
+
+options:
+  -h, --help            show this help message and exit
+  -x, --extract         Extract the contents of an iFCon file.
+  -p PACK, --pack PACK  Pack the contents of a folder into an iFCon file.
+  -o OUTPUT, --output OUTPUT
+                        The output file for extracting the iFCon file.
+
+## Example
 
 To extract the contents of an iFCon file, run the following command:
 
 ```
-python iFConExtractor.py <iFCon file>
+python iFCon.py <iFCon file> -x -o <output folder>
 ```
 
-You can use the iFConFile.py to create a new iFCon file through the class "iFConFile.iFConFile".
+To pack the contents of a folder into an iFCon file, run the following command:
+
+```
+python iFCon.py <iFCon file> -p <folder>
+```
