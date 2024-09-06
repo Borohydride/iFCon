@@ -19,5 +19,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
-    scripts=['iFCon/iFCon.py'],
+    scripts=['iFCon.py'],
 )
