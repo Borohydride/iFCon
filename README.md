@@ -43,3 +43,7 @@ or
 ```
 iFCon <iFCon file> -p <folder>
 ```
+
+## Disclaimer
+
+This tool is provided for educational and informational purposes only. The author is not responsible for any misuse or damage caused by this tool. Use it at your own risk.
