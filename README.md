@@ -3,6 +3,13 @@ A tool for handling iFAction resource file (iFCon file)
 
 ## Usage
 
+You can directly run iFCon.py or install this module with pip:
+
+```bash
+git clone https://github.com/Borohydride/iFCon.git
+pip install ./iFCon
+```
+
 ```
 positional arguments:  
   file                  The iFCon file to extract or pack.  
@@ -20,11 +27,19 @@ options:
 To extract the contents of an iFCon file, run the following command:
 
 ```
-python iFCon.py <iFCon file> -x -o <output folder>
+python3 iFCon.py <iFCon file> -x -o <output folder>
+```
+or
+```
+iFCon <iFCon file> -x -o <output folder>
 ```
 
 To pack the contents of a folder into an iFCon file, run the following command:
 
 ```
-python iFCon.py <iFCon file> -p <folder>
+python3 iFCon.py <iFCon file> -p <folder>
+```
+or
+```
+iFCon <iFCon file> -p <folder>
 ```
