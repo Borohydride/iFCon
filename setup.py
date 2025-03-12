@@ -7,7 +7,6 @@ setuptools.setup(
     name="iFCon",
     version="2.0",
     author="Borohydride",
-    author_email="3171132517@qq.com",
     description="A tool for handling iFAction resource file (iFCon file)",
     long_description=long_description,
     long_description_content_type="text/markdown",
